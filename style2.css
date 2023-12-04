@@ -1,0 +1,63 @@
+.page-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    grid-template-areas: 
+    "head head head"
+    "summary summary summary"
+    "preamble preamble preamble"
+    "mainsup participation benefits"
+    "requirements requirements requirements"
+    "footer footer footer"
+    "desselect desselect desselect"
+    "zenres zenres zenres"
+    "desarc desarc desarc";
+}
+
+.intro {
+    grid-area: head;
+}
+
+.summary {
+    grid-area: summary;
+}
+
+.preamble {
+    grid-area: preamble;
+}
+
+.explanation {
+    grid-area: mainsup;
+}
+
+.participation {
+    grid-area: participation;
+}
+
+.benefits {
+    grid-area: benefits;
+}
+
+.requirements {
+    grid-area: requirements;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.design-selection {
+    grid-area: desselect;
+}
+
+.design-archives {
+    grid-area: desarc;
+}
+
+.zen-resources {
+    grid-area: zenres;
+}
+
+body {
+    width: 65%;
+}

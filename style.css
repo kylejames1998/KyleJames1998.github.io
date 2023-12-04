@@ -18,15 +18,58 @@
     background-color: #1B545D;
     color: #8ECAE6;
     border-bottom: 2px solid black;
+    font-weight: 900;
  }
 
- #zen-summary {
-    width: 60%;
+ aside {
+   grid-area: aside;
  }
 
-.page-wrapper {
-    display: grid;
-    grid-template: repeat(3, 31%) / 50% 50%;
+
+.intro {
+   grid-area: head;
 }
+ .summary {
+   grid-area: summary;
+ }
+
+ .preamble {
+   grid-area: preamble;
+ }
+
+ .main-supporting {
+   grid-area: mainsupport;
+ }
+
+ .participation {
+   grid-area: participation;
+ }
+
+ .benefits {
+   grid-area: benefits;
+ }
+
+ .requirements {
+   grid-area: requirements;
+ }
+ .page-wrapper {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: 80px auto auto auto auto auto auto auto 80px;
+   grid-template-areas: 
+      "head head head"
+      "aside intro intro"
+      "aside summary summary"
+      "aside preamble preamble"
+      "aside mainsupport mainsupport"
+      "participation participation participation"
+      "benefits benefits benefits"
+      "requirements requirements requirements"
+      "footer footer footer";
+ }
+
+ 
+
+
 /* note to self
 /* make the grid on a smaller portion since gridding the whole page isnt working
