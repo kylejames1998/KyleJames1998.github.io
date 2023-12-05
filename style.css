@@ -121,6 +121,7 @@ h2 {
    font-family: 'Manrope', sans-serif;
    background-color: #AFC1D6;
    border-top: 4px solid #D6CA98;
+   border-bottom: 4px solid #D6CA98;
 }
 /* type styles */
 footer {
@@ -128,7 +129,6 @@ footer {
    margin-bottom: 10px;
    text-align: center;
    justify-content: center;
-   border: 2px solid #D6CA98;
    grid-area: footer;
    font-size: 20px;
 }
