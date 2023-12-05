@@ -42,15 +42,18 @@ aside {
    grid-area: explanation;
    margin-left: 20px;
    line-height: 125%;
+   font-family: 'Manrope', sans-serif;
 }
 .explanation p {
    text-indent: 15px;
 }
 .participation {
    grid-area: participation;
+   font-family: 'Manrope', sans-serif;
 }
 .benefits {
    grid-area: benefits;
+   font-family: 'Manrope', sans-serif;
 }
 
 /* header styles */
@@ -74,7 +77,7 @@ h2 {
    padding: 1.5em;
    background-color: #AFC1D6;
    border-bottom: 4px solid #D6CA98;
-   font-family: 'Saira Extra Condensed', sans-serif;
+   font-family: 'Manrope', sans-serif;
    font-size: 20px;
 }
 .summary p {
@@ -116,7 +119,17 @@ footer a {
    font-family: 'Varela Round', sans-serif;
    
 }
-footer a:hover {
+/* Link styles */
+ a:hover {
    background-color: #655A7C;
    border: 1px solid black;
+}
+ a:visited {
+   color: purple;
+}
+a {
+   text-decoration: none;
+   font-style: italic;
+   font-family: 'Varela Round', sans-serif;
+   font-size: smaller;
 }
