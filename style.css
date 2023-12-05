@@ -61,6 +61,7 @@ aside {
    background-color: #655A7C;
    padding: .5em;
    font-family: 'Manrope', sans-serif;
+   background-image: url(images/eberhard-grossgasteiger-NvesrDbsrL4-unsplash.jpg);
 }
 header {
    border-bottom: 4px solid #D6CA98;
@@ -72,6 +73,7 @@ header h2 {
 h2 {
    text-indent: 30px;
 }
+/* class styles */
 .summary {
    text-align: center;
    padding: 1.5em;
@@ -103,7 +105,10 @@ h2 {
 
 .requirements {
    grid-area: requirements;
+   font-family: 'Manrope', sans-serif;
+   background-color: #AFC1D6;
 }
+/* type styles */
 footer {
    padding: 1em;
    margin-bottom: 10px;
@@ -132,4 +137,5 @@ a {
    font-style: italic;
    font-family: 'Varela Round', sans-serif;
    font-size: smaller;
+   color: red;
 }
