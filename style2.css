@@ -1,75 +1,50 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200;300&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,700&family=Silkscreen&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+  }
 
-.page-wrapper {
+  body {
+    width: 962px;
+    margin: 15px auto;
+    border: 1px solid black;
+    /* border-radius: 12px; */
+  }
+
+  .wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto auto auto auto auto auto auto;
-    grid-gap: 20px;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: auto;
+    grid-gap: 10px;
     grid-template-areas: 
-    "head head head"
-    "summary summary summary"
-    "preamble preamble preamble"
-    "mainsup participation benefits"
-    "requirements requirements requirements"
-    "footer footer footer"
-    "desselect desselect desselect"
-    "zenres zenres zenres"
-    "desarc desarc desarc";
-}
+       "ds da zr";
+    border-top: 4px solid #D6CA98;
+    font-family: 'Manrope', sans-serif;
+    padding: 1.5em;
+    font-size: 18px;
+    background-color: #AFC1D6;
+ }
+ .design-selection {
+    grid-area: ds;
+    padding-left: .2em;
+ }
+ .design-archives {
+    grid-area: da;
+ }
+ .zen-resources {
+    grid-area: zr;
+ }
+ .summary {
+    text-align: center;
+    font-family: 'Changa', sans-serif;
+ }
 
-h1 {
+ header {
+    background-color: #CAD2C5;
     padding: .5em;
-}
-.intro {
-    grid-area: head;
-}
-
-.summary {
-    grid-area: summary;
-}
-
-.preamble {
-    grid-area: preamble;
-}
-
-.explanation {
-    grid-area: mainsup;
-}
-
-.participation {
-    grid-area: participation;
-}
-
-.benefits {
-    grid-area: benefits;
-}
-
-.requirements {
-    grid-area: requirements;
-}
-
-footer {
-    grid-area: footer;
-}
-
-header {
-    background-color: green;
-}
-
-.design-selection {
-    grid-area: desselect;
-}
-
-.design-archives {
-    grid-area: desarc;
-}
-
-.zen-resources {
-    grid-area: zenres;
-}
-
-/* possibly try floating inatead ig grid
+    font-family: 'Silkscreen', sans-serif;
+    background-image: url(images/mushroom.jpg);
+ }
