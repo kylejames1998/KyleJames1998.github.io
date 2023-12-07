@@ -11,7 +11,8 @@
     width: 962px;
     margin: 15px auto;
     border: 1px solid black;
-    /* border-radius: 12px; */
+    border-radius: 10px 20px 0 20px;
+    box-shadow: 3px 3px 4px 4px #e52521;
   }
 
   .wrapper {
@@ -21,11 +22,14 @@
     grid-gap: 10px;
     grid-template-areas: 
        "ds da zr";
-    border-top: 4px solid #D6CA98;
+    border-top: 2px solid black;
     font-family: 'Manrope', sans-serif;
     padding: 1.5em;
     font-size: 18px;
-    background-color: #AFC1D6;
+    background-color: #43b047;
+ }
+ .page-wrapper {
+    background-color: #43b047;
  }
  .design-selection {
     grid-area: ds;
@@ -40,6 +44,16 @@
  .summary {
     text-align: center;
     font-family: 'Changa', sans-serif;
+    background-color: #049cd8;
+    padding: .5em;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+ }
+ .preamble {
+    font-family: 'Changa', sans-serif;
+    /* text-indent: 20px; */
+    padding: .5em;
+    font-size: 17px;
  }
 
  header {
@@ -48,3 +62,38 @@
     font-family: 'Silkscreen', sans-serif;
     background-image: url(images/mushroom.jpg);
  }
+ footer {
+    text-align: center;
+    border-top: 2px solid black;
+ }
+ 
+ h1, h2, h3 {
+    font-family: 'Silkscreen', sans-serif;
+    text-align: center;
+ }
+ p::first-letter {
+    font-size: 20px;
+ }
+ #zen-supporting {
+    background-color: #049cd8;
+    border-top: 2px solid black;
+    padding: .5em;
+    font-family: 'Changa', sans-serif;
+    line-height: 140%;
+    text-indent: 20px;
+    font-size: 17px;
+ }
+ a {
+    box-shadow: inset 0 0 0 0 #7EADFF;
+    color: #e52521;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+  a:hover {
+    box-shadow: inset 100px 0 0 0 #7EADFF;
+    color: white;
+  }
+aside a {
+    color: black;
+}
