@@ -1,19 +1,47 @@
  /* Fonts */
  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,400;1,700;1,900&family=Saira+Extra+Condensed&display=swap');
 
+ /* Universal Selector */
  * {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
    font-family: 'Manrope', sans-serif;
  }
+
+ /* type styles */
+footer {
+   padding: 1em;
+   margin-bottom: 10px;
+   text-align: center;
+   justify-content: center;
+   grid-area: footer;
+   font-size: 20px;
+}
+footer a {
+   text-decoration: none;
+   font-style: italic;
+   font-family: 'Varela Round', sans-serif;
+   
+}
  body {
    background-color: #655A7C;
  }
  aside {
    border-bottom: 4px solid #D6CA98;
  }
- /* Grid Styles */
+ header {
+   border-bottom: 4px solid #D6CA98;
+}
+header h2 {
+   font-size: medium;
+}
+
+h2 {
+   text-indent: 30px;
+}
+
+/* ID Styles */
 #zen-supporting {
    display: grid;
    grid-template-columns: repeat(3, 33%);
@@ -28,7 +56,7 @@
    line-height: 135%;
    text-indent: 15px;
 }
-
+/* Class Styles */
 .wrapper {
    display: grid;
    grid-template-columns: repeat(3, 33%);
@@ -37,7 +65,6 @@
    grid-template-areas: 
       "ds da zr";
    border-top: 4px solid #D6CA98;
-   font-family: 'Manrope', sans-serif;
    padding: 1.5em;
    font-size: 18px;
    background-color: #AFC1D6;
@@ -59,7 +86,6 @@
    grid-area: explanation;
    margin-left: 20px;
    line-height: 125%;
-   font-family: 'Manrope', sans-serif;
    padding: 1em;
 }
 .explanation p {
@@ -67,39 +93,22 @@
 }
 .participation {
    grid-area: participation;
-   font-family: 'Manrope', sans-serif;
    padding: 1em;
 }
 .benefits {
    grid-area: benefits;
-   font-family: 'Manrope', sans-serif;
    padding: 1em;
 }
-
-/* header styles */
 .intro h1, h2 {
    background-color: #655A7C;
    padding: .5em;
-   font-family: 'Manrope', sans-serif;
    background-image: url(images/eberhard-grossgasteiger-NvesrDbsrL4-unsplash.jpg);
 }
-header {
-   border-bottom: 4px solid #D6CA98;
-}
-header h2 {
-   font-size: medium;
-}
-
-h2 {
-   text-indent: 30px;
-}
-/* class styles */
 .summary {
    text-align: center;
    padding: 1.5em;
    background-color: #AFC1D6;
    border-bottom: 4px solid #D6CA98;
-   font-family: 'Manrope', sans-serif;
    font-size: 20px;
 }
 .summary p {
@@ -112,7 +121,6 @@ h2 {
    line-height: 145%;
    border-right: 4px solid #D6CA98;
    width: 50%;
-   font-family: 'Manrope', sans-serif;
 }
 .preamble h3 {
    margin-left: 40px;
@@ -124,28 +132,13 @@ h2 {
 
 .requirements {
    grid-area: requirements;
-   font-family: 'Manrope', sans-serif;
    background-color: #AFC1D6;
    border-top: 4px solid #D6CA98;
    border-bottom: 4px solid #D6CA98;
    line-height: 135%;
    padding: 1em;
 }
-/* type styles */
-footer {
-   padding: 1em;
-   margin-bottom: 10px;
-   text-align: center;
-   justify-content: center;
-   grid-area: footer;
-   font-size: 20px;
-}
-footer a {
-   text-decoration: none;
-   font-style: italic;
-   font-family: 'Varela Round', sans-serif;
-   
-}
+
 /* Link styles */
  a:hover {
    background-color: #655A7C;
