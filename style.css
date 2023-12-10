@@ -24,19 +24,18 @@ footer a {
    font-family: 'Varela Round', sans-serif;
    
 }
- body {
+body {
    background-color: #655A7C;
- }
- aside {
+}
+aside {
    border-bottom: 4px solid #D6CA98;
- }
+}
  header {
    border-bottom: 4px solid #D6CA98;
 }
 header h2 {
    font-size: medium;
 }
-
 h2 {
    text-indent: 30px;
 }
@@ -154,7 +153,6 @@ a {
    font-size: smaller;
    color: red;
 }
-
 a {
    display: inline-block;
    transition: .3s;
@@ -165,7 +163,6 @@ a:hover {
    -webkit-transform: scale(1.2);
    transform: scale(1.2);
 }
-
 p::first-line {
    font-size: 18px;
 }
